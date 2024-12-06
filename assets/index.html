@@ -43,7 +43,7 @@
         <h1 class="title">Nathalie Lysefeldt</h1>
         <p class="section_text_p2">Front End Developer</p>
         <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('\CV_nat.pdf')"> Download CV
+            <button class="btn btn-color-2" onclick="window.open('../assets/Docs/Portfolio_CV.pdf')"> Download CV
             </button>
             <button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Info
             </button>
@@ -262,6 +262,16 @@
       />
 </section>
 <section id="projects">
+  <div id="noodletimeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <video controls>
+        <source src="./Videos/Noodletime_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects <span><img src="./Images/projects.png" alt="Project icon" class="projects_icon"></h1>
    </div>
@@ -285,15 +295,16 @@
     </div>
     <div class="details-container color-container">
         <div class="article.container">
-        <img src="./eljalapeno.png" alt="Project two" class="project-img">
+        <img src="./Images/noodletimepic.png" alt="Project two" class="project-img">
     </div>
-    <h2 class="experience-sub-title project-title">Project two</h2>
+    <h2 class="experience-sub-title project-title">Noodletime</h2>
+    <p class="section__text__p1">Restaurangsida. Gjort logotypen och illustrationerna vid sidan om hemsidan. Skapad i React, TS och tailwind</p>
     <div class="btn-container">
-        <button class="btn btn-color-2 projects-btn" onclick="location.href='https://github.com/swenat/Game-Project---El-Jalapeno?tab=readme-ov-file '">
+        <button class="btn btn-color-2 projects-btn" onclick="location.href='https://1drv.ms/v/s!AjksRY2CXiF6r5xyXH8upN9ZjoHtlg?e=QJGxhI'">
             Github
         </button>
-        <button class="btn btn-color-2 projects-btn" onclick="location.href='https://el-jalapeno.netlify.app/'">
-            Live Demo
+        <button class="btn btn-color-2 projects-btn" onclick="openModal()">
+            Demo
         </button>
     </div>
 </div>
