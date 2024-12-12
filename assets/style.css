@@ -289,9 +289,9 @@ section {
 }
 
 .arrow {
-	position: absolute;
+	position:relative;
 	right: -5rem;
-	bottom: 2.5rem;
+	bottom: 3rem;
 }
 
 .details-container {
@@ -302,6 +302,8 @@ section {
 	border: rgb(53, 53, 53) 0.1rem solid;
 	border-color: rgb(163, 163, 163);
 	text-align: center;
+	justify-content: center;
+	align-content:center;
 }
 
 .section-container {
@@ -341,13 +343,13 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-around;
+    justify-content: left;
   }
 
 article {
 	display: flex;
 	width: 10rem;
-	justify-content: space-around;
+	justify-content: left;
 	gap: 0.5rem;
 }
 
@@ -368,8 +370,8 @@ article .icon {
 
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    max-width: 400px;
+	height: 300px;
 }
 
 .project-title {
