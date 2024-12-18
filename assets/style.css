@@ -64,6 +64,7 @@ a:hover {
 
 .logo:hover {
 	cursor: default;
+	
 }
 
 /* Hamburger Menu */
@@ -169,6 +170,11 @@ section {
 	margin: auto 0;
 }
 
+#natprofileimg{
+	border: white;
+	border-radius: 80px;
+}
+
 .section_text {
 	align-self: center;
 	text-align: center;
@@ -204,6 +210,12 @@ section {
 .icon {
 	cursor: pointer;
 	height: 2rem;
+}
+
+.icon:hover {
+
+		transform: translateY(-2px);
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);	
 }
 
 .projects_icon {
@@ -267,6 +279,7 @@ section {
 
 #about {
 	position: relative;
+	margin-top: 5px;
 }
 
 .about-containers {
